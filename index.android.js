@@ -1,4 +1,4 @@
-var {PropTypes} = require('react');
+var {PropTypes} = require('prop-types');
 var { requireNativeComponent} = require('react-native');
 
 var iface = {
