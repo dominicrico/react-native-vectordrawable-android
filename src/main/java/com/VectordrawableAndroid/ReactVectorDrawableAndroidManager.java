@@ -76,7 +76,7 @@ public class ReactVectorDrawableAndroidManager extends ViewGroupManager<Relative
             draw = ResourcesCompat.getDrawable(view.getContext(), resourceIdent);
         else{
             try {
-                draw = VectorDrawable.getDrawable(view.getContext(), resourceIdent);
+                draw = view.getContext().getResources().getDrawable(resourceIdent);
             } catch (IllegalArgumentException e1) {
                 try {
                     draw = AnimatedVectorDrawable.getDrawable(view.getContext(), resourceIdent);
